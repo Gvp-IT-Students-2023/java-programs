@@ -1,21 +1,18 @@
 import java.util.Scanner;
+
 class Week1B2 {
+
   public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    int h,m,s;
-    String t;
-    h=sc.nextInt();
-    m=sc.nextInt();
-    s=sc.nextInt();
-    t=sc.next();
-    if(h==12&&t.equalsIgnoreCase("AM"))
-         {
-             h=0;
-         }
-         else if((t.equalsIgnoreCase("PM"))&&h!=12)
-         {
-             h=h+12;
-         }
-         System.out.println(h+" : "+m+" : "+s);
+    Scanner sc = new Scanner(System.in);
+    int hh = sc.nextInt();
+    int mm = sc.nextInt();
+    int ss = sc.nextInt();
+    String a = sc.next();
+    if (hh == 12 && a.equalsIgnoreCase("AM")) {
+      hh = 0;
+    } else if ((a.equalsIgnoreCase("PM")) && hh != 12) {
+      hh += 12;
+    }
+    System.out.println(hh + " : " + mm + " : " + ss);
   }
 }
