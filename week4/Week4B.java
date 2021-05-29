@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 class Calculator {
 
+  static int objC = 0;
+
+  Calculator() {
+    objC++;
+  }
+
   static int powerInt(int num1, int num2) {
-    int pow = 1;
-    for (int i = 0; i < num2; i++) pow *= num1;
-    return pow;
+    return (int) Math.pow(num1, num2);
   }
 
   static double powerDouble(double num1, double num2) {
-    double pow = 1.0;
-    for (int i = 0; i < num2; i++) pow *= num1;
-    return pow;
+    return Math.pow(num1, num2);
   }
 }
 
@@ -35,6 +37,7 @@ class Week4B {
 
     double pw2 = Calculator.powerDouble(n2, p2);
     System.out.println(n2 + " power " + p2 + " is " + pw2);
-    
+
+    System.out.println("Objects created : " + Calculator.objC);
   }
 }
