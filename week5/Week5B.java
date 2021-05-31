@@ -29,7 +29,6 @@ class Week5B {
         if (vowels.indexOf(t) != -1) vowelsCount++; else consonantsCount++;
       }
     }
-
     return new int[] { vowelsCount, consonantsCount };
   }
 }
