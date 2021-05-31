@@ -26,7 +26,11 @@ class Week5B {
     for (int i = 0; i < s.length(); i++) {
       char t = s.charAt(i);
       if (Character.isLetter(t)) {
-        if (vowels.indexOf(t) != -1) vowelsCount++; else consonantsCount++;
+        if (vowels.indexOf(t) != -1) {
+          vowelsCount++;
+        } else {
+          consonantsCount++;
+        }
       }
     }
     return new int[] { vowelsCount, consonantsCount };
