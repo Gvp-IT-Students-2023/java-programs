@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Week5C {
+class Week5C1 {
 
   public static void main(String args[]) {
     Scanner sc = new Scanner(System.in);
