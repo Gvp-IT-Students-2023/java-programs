@@ -111,8 +111,8 @@ public class Week6B {
 
     for (int i = 0; i < n; i++) {
       System.out.print((i + 1) + " " + figs[i]);
-      System.out.print(" area : " + ((float) figs[i].getSurfaceArea()));
-      System.out.println(", volume : " + ((float) figs[i].getVolume()));
+      System.out.print(" area : " + figs[i].getSurfaceArea());
+      System.out.println(", volume : " + figs[i].getVolume());
     }
   }
 }
