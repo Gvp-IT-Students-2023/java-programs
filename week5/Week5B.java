@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 class Week5B {
 
-  static String vowels = "AEIOUaeiou";
-
   public static void main(String args[]) {
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    String[] strings = new String[n];
 
+    System.out.print("Enter no. of strings: ");
+    int n = sc.nextInt();
+
+    String[] strings = new String[n];
     for (int i = 0; i < n; i++) {
+      System.out.print("Enter string " + (i + 1) + " : ");
       strings[i] = sc.next();
     }
 
@@ -22,17 +23,14 @@ class Week5B {
   }
 
   static int[] getVowelsConsonantsCount(String s) {
-    int vowelsCount = 0, consonantsCount = 0;
+    int vc = 0, cc = 0;
+    String vowels = "AEIOUaeiou";
     for (int i = 0; i < s.length(); i++) {
       char t = s.charAt(i);
-      if (Character.isLetter(t)) {
-        if (vowels.indexOf(t) != -1) {
-          vowelsCount++;
-        } else {
-          consonantsCount++;
-        }
+      if ('A' <= t && t <= 'z') {
+        if (vowels.indexOf(t) != -1) vc++; else cc++;
       }
     }
-    return new int[] { vowelsCount, consonantsCount };
+    return new int[] { vc, cc };
   }
 }
