@@ -21,9 +21,9 @@ class Week5C1 {
     if (s1.length() != s2.length()) return false;
 
     boolean isAnagram = true;
-    char[] c1 = sort(s1.toCharArray());
-    char[] c2 = sort(s2.toCharArray());
-
+    char[] c1 = sort(s1.toLowerCase().toCharArray());
+    char[] c2 = sort(s2.toLowerCase().toCharArray());
+    // Yes sir
     for (int i = 0; i < c1.length; i++) {
       if (c1[i] != c2[i]) {
         isAnagram = false;
