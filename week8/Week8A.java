@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Week8A {
+class Week8A {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -20,7 +20,6 @@ public class Week8A {
 
     Random random = new Random();
     Set<Integer> numbersSet = new LinkedHashSet<Integer>();
-
     while (numbersSet.size() < n) {
       int ran = random.nextInt(max + 1);
       if (ran != 0 && ran >= min) numbersSet.add(ran);
