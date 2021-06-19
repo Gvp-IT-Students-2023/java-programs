@@ -58,6 +58,7 @@ class Week8B {
           break;
         case 2:
           // search
+          System.out.print("Enter employee id to search : ");
           int idse = sc.nextInt();
           Employee emp = map.get(idse);
           if (emp == null) {
