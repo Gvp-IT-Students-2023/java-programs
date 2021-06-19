@@ -33,12 +33,15 @@ class Employee {
   }
 }
 
-class Week8B {
+class Week8C {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Map<Integer, Employee> map = new HashMap<Integer, Employee>();
     while (true) {
+      System.out.println("Enter a choice:");
+      System.out.println("1. Add Employee");
+      System.out.println("2. Search Employee");
       int op = sc.nextInt();
       switch (op) {
         case 1:
@@ -54,7 +57,7 @@ class Week8B {
           newEmployee.setName(name);
           newEmployee.setSalary(salary);
           map.put(id, newEmployee);
-          System.out.print("Employee added successfully ");
+          System.out.println("Employee added successfully ");
           break;
         case 2:
           // search
