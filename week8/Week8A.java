@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.HashSet;
 
 public class Week8A {
 
@@ -20,8 +19,7 @@ public class Week8A {
     }
 
     Random random = new Random();
-    Set<Integer> numbersSet = new HashSet<Integer>();
-    // LinkedHashSet for preserving inserting order
+    Set<Integer> numbersSet = new LinkedHashSet<Integer>();
 
     while (numbersSet.size() < n) {
       int ran = random.nextInt(max + 1);
