@@ -15,3 +15,5 @@ All collaborate java programs here.
 ## * [Week 4 Programs](./week4/README.md)
 
 ## * [Week 5 Programs](./week5/README.md)
+
+## * [week 6 Programs](./week6/README.md)
